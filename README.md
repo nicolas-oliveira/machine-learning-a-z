@@ -1,31 +1,33 @@
 # Machine Learning de A à Z
 
-O Machine Learning (ML) é uma área da inteligência artificial que se concentra no desenvolvimento de algoritmos e modelos que podem aprender padrões e fazer previsões a partir de dados. Aprender os conceitos de Machine Learning é crucial nos dias de hoje, pois essa tecnologia está se tornando cada vez mais importante em diversas áreas, desde saúde e finanças até marketing e entretenimento. 
+O Machine Learning (ML) é uma área da inteligência artificial que se concentra no desenvolvimento de algoritmos e modelos que podem aprender padrões e fazer previsões a partir de dados. Aprender os conceitos de Machine Learning é crucial nos dias de hoje, pois essa tecnologia está se tornando cada vez mais importante em diversas áreas, desde saúde e finanças até marketing e entretenimento.
 
-- **Teoria resumida sobre redes neurais artificiais**
-- **Classificação binária - base breast cancer**
-- **Classificação multiclasse - base iris**
-- **Regressão - base de carros usados**
-- **Regressão com múltiplas saídas - base vídeo games**
-- **Parte 2 - Redes Neurais Convolucionais**
-  - **Teoria sobre redes neurais convolucionais**
-  - **Classificação de dígitos escritos a mão**
-  - **Classificação de gatos e cachorros**
-- **Parte 3 - Redes Neurais Recorrentes**
-  - **Teoria sobre redes neurais recorrentes**
-  - **Previsão de série temporal - preços da bolsa de valores**
-- **Parte 4 - Mapas auto organizáveis**
-  - **Teoria sobre mapas auto organizáveis**
-  - **Agrupamento de tipos de vinhos**
-  - **Detecção de suspeitas de fraudes - outliers**
-- **Parte 5 - Boltzmann Machines**
-  - **Teoria sobre Boltzmann Machines**
-  - **Recomendação de filmes**
-  - **Redução de dimensionalidade de imagens**
-- **Parte 6 - Autoencoders**
-  - **Teoria sobre autoencoders**
-  - **Redução de dimensionalidade de imagens**
-- **Parte 7 - Redes Adversariais Generativas (GANs)**
-  - **Teoria sobre GANs**
-  - **Geração automática de caracteres**
-- **Apêndice - básico sobre aprendizagem de máquina**
+- **Parte 1 - Classificação**
+  - Pré-processamento dos dados
+  - Aprendizagem bayesiana
+  - Aprendizagem por árvores de decisão
+  - Aprendizagem por regras
+  - Aprendizagem baseada em instâncias
+  - Regressão logística
+  - Máquinas de vetores de suporte (SVM)
+  - Redes neurais artificiais
+  - Avaliação de algoritmos de classificação
+  - Combinação e rejeição de classificadores
+- **Parte 2 - Regressão**
+  - Regressão linear
+  - Outros tipos de regressão
+- **Parte 3 - Regras de Associação**
+  - Algoritmo apriori
+  - Algoritmo ECLAT
+- **Parte 4 - Agrupamento (clustering)**
+  - Agrupamento com k-means
+  - Outros algoritmos de agrupamento
+- **Parte 5 - Tópicos complementares**
+  - Aprendizagem por reforço com Q-Learning
+  - Processamento de Linguagem Natural com spaCy e NLTK
+  - Visão computacional
+  - Tratamento de dados desbalanceados
+  - Seleção de atributos
+  - Redução de dimensionalidade
+  - Detecção de outliers
+  - Séries temporais
