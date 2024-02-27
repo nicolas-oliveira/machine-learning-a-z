@@ -6,5 +6,5 @@ sns.set_theme()
 
 base_credit = pd.read_csv('../../credit_risk_dataset.csv')
 
-sns.heatmap()
+sns.heatmap(base_credit.corr())
 plt.show()

@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35575139-1e4f-450c-b212-5b0d126b0652" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/3_plt_hist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/4_grafico_dinamico.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/5_scatterplot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/6_lineplot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/7_boxplot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/8_heatmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/0_media_mediana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/1_deletar_coluna.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/2_remover_valores.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/3.0_preencher_com_media.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/3.1_separar_colunas_numericas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/5.1_scatter_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_intro/3_tratamento/5_valores_nulos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_intro/1_pandas/1_read_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_intro/1_pandas/1_read_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_intro/2_visualizacao/2_countplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/2_countplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.credit_risk_dataset.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/2_visualizacao/1_numpy_unique.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/1_numpy_unique.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/2_visualizacao/8_heatmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_intro/2_visualizacao/8_heatmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/3_tratamento/0_media_mediana.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/3_tratamento/1_deletar_coluna.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/3_tratamento/2_remover_valores.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/3_tratamento/3.0_preencher_com_media.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_intro/3_tratamento/3.1_separar_colunas_numericas.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.0.1_pandas_profiling.executor": "Run",
     "Python.0_media_mediana.executor": "Run",
+    "Python.0_ydata_profiling.executor": "Run",
     "Python.1_numpy_unique.executor": "Run",
     "Python.1_read_csv.executor": "Run",
     "Python.1_unique.executor": "Run",
@@ -65,8 +64,10 @@
     "Python.3_preencher_com_media.executor": "Run",
     "Python.4_describe.executor": "Run",
     "Python.4_grafico_dinamico.executor": "Run",
+    "Python.5.1_scatter_matrix.executor": "Run",
     "Python.5_columns.executor": "Run",
     "Python.5_scatterplot.executor": "Run",
+    "Python.5_valores_nulos.executor": "Run",
     "Python.7_barplot.executor": "Run",
     "Python.7_boxplot.executor": "Run",
     "Python.8_heatmap.executor": "Run",
@@ -80,7 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -114,6 +115,10 @@
       <workItem from="1707753385824" duration="8008000" />
       <workItem from="1707764655276" duration="6434000" />
       <workItem from="1707773337157" duration="2158000" />
+      <workItem from="1708199565209" duration="2133000" />
+      <workItem from="1708782155044" duration="4043000" />
+      <workItem from="1708801835519" duration="366000" />
+      <workItem from="1709051233272" duration="539000" />
     </task>
     <servers />
   </component>
@@ -124,22 +129,26 @@
     <SUITE FILE_PATH="coverage/machine_learning_a_z$5_columns.coverage" NAME="5_columns Coverage Results" MODIFIED="1707138710006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/1_pandas" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$1_valores_negativos.coverage" NAME="1_valores_negativos Coverage Results" MODIFIED="1707155886075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$2_remover_valores.coverage" NAME="2_remover_valores Coverage Results" MODIFIED="1707765288410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$0_media_mediana.coverage" NAME="0_media_mediana Coverage Results" MODIFIED="1707764531066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$1_numpy_unique.coverage" NAME="1_numpy_unique Coverage Results" MODIFIED="1707771797282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$2_countplot.coverage" NAME="2_countplot Coverage Results" MODIFIED="1707773699516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$main.coverage" NAME="main Coverage Results" MODIFIED="1706793226380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$3_plt_hist.coverage" NAME="3_plt_hist Coverage Results" MODIFIED="1707773459397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$0_media_mediana.coverage" NAME="0_media_mediana Coverage Results" MODIFIED="1708801260507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$2_countplot.coverage" NAME="2_countplot Coverage Results" MODIFIED="1708782440285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$1_numpy_unique.coverage" NAME="1_numpy_unique Coverage Results" MODIFIED="1708782466729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$3_plt_hist.coverage" NAME="3_plt_hist Coverage Results" MODIFIED="1708782460632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$2_primeiras_linhas.coverage" NAME="2_primeiras_linhas Coverage Results" MODIFIED="1707138273233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/1_pandas" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$8_heatmap.coverage" NAME="8_heatmap Coverage Results" MODIFIED="1707775228266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$2_plot_data.coverage" NAME="2_plot_data Coverage Results" MODIFIED="1707137529566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$8_heatmap.coverage" NAME="8_heatmap Coverage Results" MODIFIED="1708782296899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$4_grafico_dinamico.coverage" NAME="4_grafico_dinamico Coverage Results" MODIFIED="1707155103583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$4_describe.coverage" NAME="4_describe Coverage Results" MODIFIED="1707138609359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/1_pandas" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$5_scatterplot.coverage" NAME="5_scatterplot Coverage Results" MODIFIED="1708782503577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$5_1_scatter_matrix.coverage" NAME="5.1_scatter_matrix Coverage Results" MODIFIED="1708782598186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$0_ydata_profiling.coverage" NAME="0_ydata_profiling Coverage Results" MODIFIED="1708801849005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$5_valores_nulos.coverage" NAME="5_valores_nulos Coverage Results" MODIFIED="1708802176519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$main.coverage" NAME="main Coverage Results" MODIFIED="1706793226380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$2_plot_data.coverage" NAME="2_plot_data Coverage Results" MODIFIED="1707137529566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$3_preencher_com_media.coverage" NAME="3_preencher_com_media Coverage Results" MODIFIED="1707771072763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$1_unique.coverage" NAME="1_unique Coverage Results" MODIFIED="1707138894959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_numpy" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$7_barplot.coverage" NAME="7_barplot Coverage Results" MODIFIED="1707773613663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$3_1_separar_colunas_numericas.coverage" NAME="3.1_separar_colunas_numericas Coverage Results" MODIFIED="1707766098367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$4_describe.coverage" NAME="4_describe Coverage Results" MODIFIED="1707138609359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/1_pandas" />
     <SUITE FILE_PATH="coverage/machine_learning_a_z$1_read_csv.coverage" NAME="1_read_csv Coverage Results" MODIFIED="1707138089896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/1_pandas" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$5_scatterplot.coverage" NAME="5_scatterplot Coverage Results" MODIFIED="1707772791228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
-    <SUITE FILE_PATH="coverage/machine_learning_a_z$7_boxplot.coverage" NAME="7_boxplot Coverage Results" MODIFIED="1707773796978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$7_boxplot.coverage" NAME="7_boxplot Coverage Results" MODIFIED="1708782418241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/2_visualizacao" />
+    <SUITE FILE_PATH="coverage/machine_learning_a_z$0_1_pandas_profiling.coverage" NAME="0.1_pandas_profiling Coverage Results" MODIFIED="1708801464405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_intro/3_tratamento" />
   </component>
 </project>
